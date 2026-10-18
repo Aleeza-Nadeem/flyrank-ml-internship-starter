@@ -1,0 +1,61 @@
+{
+  "queue_rows": 5378,
+  "reason_code_counts": {
+    "UNDERCLICKED_TOP10": 5379,
+    "PAGE2_CLIMBER": 6958,
+    "HEALTHY_TOP10": 6200,
+    "LOW_VISIBILITY": 8075
+  },
+  "out_of_fold_auc_by_group_fold": [
+    0.965,
+    0.945,
+    0.963,
+    0.97,
+    0.986
+  ],
+  "typical_ctr_by_position_bucket": {
+    "(0, 3]": 0.0,
+    "(3, 5]": 0.0021,
+    "(5, 10]": 0.0007,
+    "(10, 20]": 0.0,
+    "(20, 1000]": 0.0
+  },
+  "cost_value": [
+    {
+      "top_n_pages": 10,
+      "share_of_estimated_clicks_left": 0.193,
+      "assumed_review_hours": 5.0,
+      "clicks_left_ceiling_per_review_hour": 135.1
+    },
+    {
+      "top_n_pages": 25,
+      "share_of_estimated_clicks_left": 0.308,
+      "assumed_review_hours": 12.5,
+      "clicks_left_ceiling_per_review_hour": 86.0
+    },
+    {
+      "top_n_pages": 50,
+      "share_of_estimated_clicks_left": 0.402,
+      "assumed_review_hours": 25.0,
+      "clicks_left_ceiling_per_review_hour": 56.1
+    },
+    {
+      "top_n_pages": 100,
+      "share_of_estimated_clicks_left": 0.522,
+      "assumed_review_hours": 50.0,
+      "clicks_left_ceiling_per_review_hour": 36.5
+    },
+    {
+      "top_n_pages": 250,
+      "share_of_estimated_clicks_left": 0.687,
+      "assumed_review_hours": 125.0,
+      "clicks_left_ceiling_per_review_hour": 19.2
+    }
+  ],
+  "cost_value_assumption": "30 minutes review time per page (assumed, edit to real figure)",
+  "monitoring_thresholds": {
+    "review_if_auc_below": 0.9,
+    "review_if_ctr_bucket_median_shifts_by": 0.25
+  },
+  "note": "observed / directional / decision-support; no causal claim"
+}
